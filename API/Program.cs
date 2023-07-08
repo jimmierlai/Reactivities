@@ -32,6 +32,10 @@ app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 
+app.UseCors("CorsPolicy");
+
+app.UseAuthorization();
+
 app.MapControllers();
 
 using var scope = app.Services.CreateScope();
